@@ -13,6 +13,8 @@
 		8F45C97724FD5119008A6F5F /* ConstantsTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F45C97624FD5119008A6F5F /* ConstantsTemplate.swift */; };
 		8F45C97924FD6170008A6F5F /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F45C97824FD6170008A6F5F /* Response.swift */; };
 		8F557F9724FFF7A3005F7154 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F557F9624FFF7A3005F7154 /* CacheManager.swift */; };
+		8F557F99250002B3005F7154 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F557F98250002B3005F7154 /* DetailViewController.swift */; };
+		8F557F9C25000D65005F7154 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F557F9B25000D65005F7154 /* WebKit.framework */; };
 		8FB07B7624F560CD00379F5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB07B7524F560CC00379F5B /* AppDelegate.swift */; };
 		8FB07B7824F560CD00379F5B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB07B7724F560CD00379F5B /* SceneDelegate.swift */; };
 		8FB07B7A24F560CD00379F5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB07B7924F560CD00379F5B /* ViewController.swift */; };
@@ -29,6 +31,8 @@
 		8F45C97624FD5119008A6F5F /* ConstantsTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsTemplate.swift; sourceTree = "<group>"; };
 		8F45C97824FD6170008A6F5F /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		8F557F9624FFF7A3005F7154 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		8F557F98250002B3005F7154 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		8F557F9B25000D65005F7154 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		8FB07B7224F560CC00379F5B /* youtube-api.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "youtube-api.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FB07B7524F560CC00379F5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FB07B7724F560CD00379F5B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,17 +49,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F557F9C25000D65005F7154 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F557F9A25000D65005F7154 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F557F9B25000D65005F7154 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8FB07B6924F560CC00379F5B = {
 			isa = PBXGroup;
 			children = (
 				8FB07B7424F560CC00379F5B /* youtube-api */,
 				8FB07B7324F560CC00379F5B /* Products */,
+				8F557F9A25000D65005F7154 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				8FB07B7924F560CD00379F5B /* ViewController.swift */,
+				8F557F98250002B3005F7154 /* DetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -199,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F557F99250002B3005F7154 /* DetailViewController.swift in Sources */,
 				8F45C97924FD6170008A6F5F /* Response.swift in Sources */,
 				8F45C97724FD5119008A6F5F /* ConstantsTemplate.swift in Sources */,
 				8FB07B7A24F560CD00379F5B /* ViewController.swift in Sources */,
